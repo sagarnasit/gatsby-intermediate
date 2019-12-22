@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "sagarnasit",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }
