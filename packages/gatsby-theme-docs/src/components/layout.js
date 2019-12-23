@@ -11,7 +11,9 @@ const Layout = ({ children }) => (
         >gatsby-theme-docs</header>
         <main
             sx={{ mx: 'auto', maxWidth: 650, width: '90vw' }}
-        >{children}</main>
+        >
+            {children}
+        </main>
     </Fragment>
 )
 
