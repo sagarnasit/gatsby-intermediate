@@ -1,5 +1,5 @@
 require('dotenv').config({
-    path: `env.${process.env.NODE_ENV}`
+    path: `.env.${process.env.NODE_ENV}`,
 });
 
 exports.default = {
@@ -13,13 +13,28 @@ exports.default = {
             }
         },
         {
-            resolve: 'gatsby-trasform-cloudinary',
+            resolve: 'gatsby-transformer-cloudinary',
             options: {
                 cloudName: process.env.CLOUDINARY_CLOUD_NAME,
                 apiKey: process.env.CLOUDINARY_API_KEY,
                 apiSecret: process.env.CLOUDINARY_API_SECRET,
                 uploadFolder: 'fm-workshop'
             }
+        },
+        {
+            resolve: 'gatsby-theme-docs',
+            options: {
+                basePath: '/recipes',
+                contentPath: 'content/recipes'
+            }
+        },
+        {
+            resolve: '@jlengstorf/gatsby-theme-events',
+            options: {
+                basePath: '/events',
+                contentPath: 'content/events'
+            }
+
         }
     ]
 }
