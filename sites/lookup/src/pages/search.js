@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Form from '../components/form';
 
 const Search = () => (
     <>
@@ -7,7 +7,7 @@ const Search = () => (
         <p>
             Find some cool Rick and Morty characters.
         </p>
-
+        <Form />
     </>
 );
 
